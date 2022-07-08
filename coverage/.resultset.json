@@ -252,8 +252,29 @@
           null
         ]
       },
+      "/Users/shirleydecesari/turing/2module/relational_rails/national_park/spec/models/park_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/shirleydecesari/turing/2module/relational_rails/national_park/app/models/park.rb": {
         "lines": [
+          1,
+          1,
+          1,
           1,
           1,
           null
@@ -265,8 +286,51 @@
           1,
           null
         ]
+      },
+      "/Users/shirleydecesari/turing/2module/relational_rails/national_park/spec/models/trail_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/shirleydecesari/turing/2module/relational_rails/national_park/app/models/trail.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/shirleydecesari/turing/2module/relational_rails/national_park/app/controllers/parks_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/shirleydecesari/turing/2module/relational_rails/national_park/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1657306082
+    "timestamp": 1657323216
   }
 }
