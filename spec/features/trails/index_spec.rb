@@ -8,5 +8,6 @@ RSpec.describe 'index page view' do
    visit '/trails'
 
    expect(page).to have_content(trail.name)
+   # save_and_open_page
    end 
 end 
