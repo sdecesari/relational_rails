@@ -244,6 +244,7 @@
           null,
           1,
           1,
+          1,
           null
         ]
       },
@@ -265,6 +266,22 @@
           null,
           1,
           1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/shirleydecesari/turing/2module/relational_rails/national_park/spec/features/trails/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
           1,
           null,
           1,
@@ -353,8 +370,18 @@
           1,
           null
         ]
+      },
+      "/Users/shirleydecesari/turing/2module/relational_rails/national_park/app/controllers/trails_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1657330885
+    "timestamp": 1657332622
   }
 }
