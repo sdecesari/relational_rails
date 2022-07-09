@@ -10,6 +10,6 @@ RSpec.describe 'park show page', type: :feature do
       expect(page).to have_content(park.cost)
       expect(page).to have_content(park.daily_visitors)
 
-      save_and_open_page
+      # save_and_open_page
    end 
 end
