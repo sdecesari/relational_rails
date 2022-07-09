@@ -6,6 +6,7 @@ RSpec.describe 'index page view' do
    
    visit '/parks'
 
-   
+   expect(page).to have_content(park.name)
+   save_and_open_page
    end 
-end
+end 
