@@ -11,6 +11,6 @@ RSpec.describe 'trails show page', type: :feature do
       expect(page).to have_content(trail.difficulty)
       expect(page).to have_content(trail.open)
 
-      save_and_open_page
+      # save_and_open_page
    end 
 end
