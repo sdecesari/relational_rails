@@ -1,4 +1,9 @@
+<ul>
+   <a href="/parks">Parks</a>
+   <a href="/trails">Trails</a>
+</ul>
+<h1>Parks</h1>
 <% @parks.each do |park| %>
-   <h1><p><%= park.name %></p></h1>
+   <h2><p><%= park.name %></p></h2>
    <p>Created At: <%= park.created_at %></p>
 <% end %>
