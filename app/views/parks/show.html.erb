@@ -1,6 +1,5 @@
-<ul>
-   <a href="/parks/#{park.id}/trails">Trails</a>
-</ul>
+<%= link_to 'Park Trails', "/parks/#{@park.id}/trails" %>
 <h1><%= @park.name %></h1>
+<p>Numbe of Trails: <%= @park.trails.count %></p>
 <p>Cost: <%= @park.cost %></p>
 <p>Daily Visitors: <%= @park.daily_visitors %></p>

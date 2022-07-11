@@ -1,9 +1,9 @@
-<ul>
-   <a href="/parks">Parks</a>
-   <a href="/trails">Trails</a>
-</ul>
+<a href="/parks">Parks</a>
+<a href="/trails">Trails</a>
 <h1>Parks</h1>
 <% @parks.each do |park| %>
-   <h2><p><%= park.name %></p></h2>
-   <p>Created At: <%= park.created_at %></p>
+  <h2><p><%= park.name %></p></h2>
+  <p>Cost: <%= park.cost %></p>
+  <p>Daily Visitors: <%= park.daily_visitors %></p>
+  <p>Created At: <%= park.created_at %></p>
 <% end %>
