@@ -21,7 +21,6 @@ RSpec.describe 'index page view', type: :feature do
       click_link "Parks"
 
       expect(page).to have_link("Parks", :href=>"/parks")
-      # save_and_open_page
    end
 
    it "user story 8: can take you back to trail index" do
@@ -29,7 +28,6 @@ RSpec.describe 'index page view', type: :feature do
       click_link "Trails"
 
       expect(page).to have_link("Trails", :href=>"/trails")
-      # save_and_open_page
    end
 
    it "user story 11: links to the new page from the park index" do

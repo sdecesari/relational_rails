@@ -10,8 +10,8 @@ RSpec.describe 'the park creation', type: :feature do
 
   it "User story 11: can create a new park" do
     visit 'parks/new'
-    fill_in('Name', with: "Zion National Park")
-    fill_in('Cost', with: true)
+    fill_in('name', with: "Zion National Park")
+    fill_in('cost', with: true)
     fill_in('daily_visitors', with: 98399)
     click_button 'Create Park'
 

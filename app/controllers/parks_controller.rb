@@ -15,4 +15,14 @@ class ParksController < ApplicationController
     redirect_to "/parks"
   end
 
+  def edit
+    @park = Park.find(params[:id])
+  end
+
+  def update
+    park = Park.find(params[:id])
+    park.update(name: "Yosimite National Park", cost: params[:cost], daily_visitors: params[:daily_visitors])
+    redirect_to "/parks/#{park.id}"
+  end
+
 end
