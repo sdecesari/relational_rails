@@ -31,4 +31,12 @@ RSpec.describe 'index page view', type: :feature do
       expect(page).to have_link("Trails", :href=>"/trails")
       # save_and_open_page
    end
+
+   it "user story 11: links to the new page from the park index" do
+     visit '/parks'
+     click_link 'New Park'
+
+     expect(current_path).to eq("/parks/new")
+   end
+
 end
