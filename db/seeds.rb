@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-park_1 = Park.create!(name: "Yosimite National Park", cost: true, daily_visitors: 39839)
+park_1 = Park.create!(name: "Yosemite National Park", cost: true, daily_visitors: 39839)
 park_2 = Park.create!(name: "Yellowstone National Park", cost: true, daily_visitors: 8923)
 trail_1 = park_1.trails.create!(name: "Cook's Meadow Trail", difficulty: 1, open: true)
 trail_2 = park_1.trails.create!(name: "The Mist Trail", difficulty: 2, open: true)

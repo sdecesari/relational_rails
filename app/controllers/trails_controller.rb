@@ -1,10 +1,20 @@
 class TrailsController < ApplicationController
-   def index 
+   def index
       @trails = Trail.all
-   end 
+   end
 
    def show
       @trail = Trail.find(params[:id])
    end
 
-end 
+   def edit
+     @trail = Trail.find(params[:id])
+   end
+
+   def update
+     trail = Trail.find(params[:id])
+     trail.update(name: [params[:id]], difficulty: params[:difficulty], open: params[:open])
+     redirect_to "/trails/#{trail.id}"
+   end
+
+end

@@ -18,5 +18,4 @@ RSpec.describe 'the park creation', type: :feature do
     expect(current_path).to eq("/parks")
     expect(page).to have_content("")
   end
-
 end
