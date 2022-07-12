@@ -1,5 +1,6 @@
 <a href="/parks">Parks</a>
 <a href="/trails">Trails</a>
+<%= link_to 'New Park', "/parks/new" %>
 <h1>Parks</h1>
 <% @parks.each do |park| %>
   <h2><p><%= park.name %></p></h2>
