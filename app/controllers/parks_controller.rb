@@ -21,7 +21,7 @@ class ParksController < ApplicationController
 
   def update
     park = Park.find(params[:id])
-    park.update(name: "Yosimite National Park", cost: params[:cost], daily_visitors: params[:daily_visitors])
+    park.update(name: params[:name], cost: params[:cost], daily_visitors: params[:daily_visitors])
     redirect_to "/parks/#{park.id}"
   end
 
