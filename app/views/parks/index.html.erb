@@ -5,6 +5,7 @@
 <% @parks.each do |park| %>
   <h2><p><%= park.name %></p></h2>
   <p><%= link_to "Update #{park.name}", "/parks/#{park.id}/edit" %> </p>
+  <p><%= link_to "Delete #{park.name}", "/parks/#{park.id}", id: "park-#{park.id}", method: :delete %></p>
   <p>Cost: <%= park.cost %></p>
   <p>Daily Visitors: <%= park.daily_visitors %></p>
   <p>Created At: <%= park.created_at %></p>

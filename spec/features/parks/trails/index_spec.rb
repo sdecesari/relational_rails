@@ -59,5 +59,4 @@ RSpec.describe 'parks trails index' do
   end
 
 
-
 end
