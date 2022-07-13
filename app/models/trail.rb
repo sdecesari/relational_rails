@@ -3,12 +3,12 @@ class Trail < ApplicationRecord
   validates_presence_of :name
   validates_presence_of :difficulty
   validates :open, inclusion: [true, false]
-end
 
   def self.open
     where(open: true)
   end
 
   def self.alphabetical_order
-    order(name: :asc)
+    order(:name)
   end
+end 

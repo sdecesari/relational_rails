@@ -1,7 +1,7 @@
 <%= link_to 'Parks', "/parks" %>
 <%= link_to 'Trails', "/trails" %>
 <h1>Trails</h1>
-<% @trails.each do |trail| %>
+<% @trails.open.each do |trail| %>
    <h2><p><%= trail.name %></p></h2>
    <p><%= link_to "Update #{trail.name}", "/trails/#{trail.id}/edit" %></p>
    <p><%= link_to "Delete #{trail.name}", "/trails/#{trail.id}", id: "trail-#{trail.id}", method: :delete %></p>
