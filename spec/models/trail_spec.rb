@@ -20,11 +20,11 @@ RSpec.describe Trail, type: :model do
       trail_2 = park.trails.create!(name: "The Mist Trail", difficulty: 2, open: false)
       trail_3 = park.trails.create!(name: "North dome Trail", difficulty: 3, open: true)
 
-      expect(Trail.where(open: true)).to eq([trail_1, trail_3])
+      expect(Trail.open).to eq([trail_1, trail_3])
     end
   end
 
-  xdescribe "alphabetical order" do
+  describe "alphabetical order" do
     Park.destroy_all
     Trail.destroy_all
     it "user story 16: sorts trails alphabetically" do

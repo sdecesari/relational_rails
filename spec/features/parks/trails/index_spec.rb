@@ -48,7 +48,7 @@ RSpec.describe 'parks trails index' do
     expect(current_path).to eq('/parks')
   end
 
-  xit "user story 16: has a link to sory trail alphabetically" do
+  it "user story 16: has a link to sory trail alphabetically" do
     park = Park.create!(name: "Yosemite National Park", cost: true, daily_visitors: 39839)
 
     visit "/parks/#{park.id}/trails"

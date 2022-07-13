@@ -24,6 +24,10 @@ RSpec.describe 'index page view' do
     expect(current_path).to eq('/parks')
   end
 
+  it "user story 15: trail only shows true records" do 
+    
+  end 
+
   it "user story 18: has a link to edit each trail" do
     park = Park.create!(name: "Yosemite National Park", cost: true, daily_visitors: 39839)
     trail = park.trails.create!(name: "Cook's Meadow Trail", difficulty: 1, open: true)

@@ -1,6 +1,6 @@
 <%= link_to 'Parks', "/parks" %>
 <%= link_to 'Trails', "/trails" %>
-<%= link_to 'Sort by Name', "/parks/#{@park.id}/trails?alpha=yes" %>
+<%= link_to 'Sort by Name', "/parks/#{@park.id}/trails?sort=alpha" %>
 <%= link_to 'Create Trail', "/parks/#{@park.id}/trails/new" %>
 <% @trails.each do |trail| %>
    <p><h3><%= trail.name %></h3></p>
