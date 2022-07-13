@@ -2,6 +2,13 @@
 <%= link_to 'Trails', "/trails" %>
 <%= link_to 'Sort by Name', "/parks/#{@park.id}/trails?sort=alpha" %>
 <%= link_to 'Create Trail', "/parks/#{@park.id}/trails/new" %>
+
+<%= form_with url: "/parks/#{@park.id}/trails", method: :get, local: true do |form|%>
+<%= form.label :difficulty, "Trails with difficulty over #" %>
+<%= form.text_field :difficulty %>
+<%= form.submit 'Submit' %>
+<% end %>
+
 <% @trails.each do |trail| %>
    <p><h3><%= trail.name %></h3></p>
    <p>Difficulty: <%= trail.difficulty %></p>
