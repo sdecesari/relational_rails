@@ -1,5 +1,5 @@
 class Trail < ApplicationRecord
-  belongs_to :park
+  belongs_to :park, dependent: :destroy
   validates_presence_of :name
   validates_presence_of :difficulty
   validates :open, inclusion: [true, false]

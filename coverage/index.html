@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-12T21:50:19-07:00">2022-07-12T21:50:19-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-12T22:06:14-07:00">2022-07-12T22:06:14-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  93.48%
+  93.77%
 </span>
 
      </span>
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>33</b> files in total.
+    <b>34</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>353</b> relevant lines,
-    <span class="green"><b>330</b> lines covered</span> and
+    <b>369</b> relevant lines,
+    <span class="green"><b>346</b> lines covered</span> and
     <span class="red"><b>23</b> lines missed. </span>
     (<span class="green">
-  93.48%
+  93.77%
 </span>
 )
   </div>
@@ -106,11 +106,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#49e0a336e5b8ffbbfee5fc155ad20cb71da64df3" class="src_link" title="app/controllers/trails_controller.rb">app/controllers/trails_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">11</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">15</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.09</td>
+            <td class="cell--number">1.93</td>
             
           </tr>
         
@@ -304,9 +304,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#69e75da08197b29491daaeb1c3d365b288a9949f" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">17</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">15</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">16</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -375,6 +375,17 @@
             <td class="cell--number">8</td>
             <td class="cell--number">7</td>
             <td class="cell--number">0.53</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#ab9e4020cc5dcd8274651cd66f958e903d18725a" class="src_link" title="spec/features/trails/delete_spec.rb">spec/features/trails/delete_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -1195,8 +1206,8 @@
     
 
     <div class="t-line-summary">
-      <b>11</b> relevant lines.
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>15</b> relevant lines.
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1230,8 +1241,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="3">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="8" data-linenumber="3">
+            <span class="hits">8</span>
             
 
             
@@ -1274,8 +1285,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="7">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="5" data-linenumber="7">
+            <span class="hits">5</span>
             
 
             
@@ -1417,7 +1428,73 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    trail = Trail.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    trail.destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    redirect_to &#39;/trails&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
@@ -1778,7 +1855,7 @@
 
             
 
-            <code class="ruby">  belongs_to :park</code>
+            <code class="ruby">  belongs_to :park, dependent: :destroy</code>
           </li>
         </div>
       
@@ -4371,8 +4448,8 @@
     
 
     <div class="t-line-summary">
-      <b>15</b> relevant lines.
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>16</b> relevant lines.
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -4489,7 +4566,7 @@
 
             
 
-            <code class="ruby">  delete &#39;/parks/:id&#39;, to: &#39;parks#destroy&#39;</code>
+            <code class="ruby">  get &#39;/trails&#39;, to: &#39;trails#index&#39;</code>
           </li>
         </div>
       
@@ -4500,7 +4577,7 @@
 
             
 
-            <code class="ruby">  get &#39;/trails&#39;, to: &#39;trails#index&#39;</code>
+            <code class="ruby">  get &#39;/trails/:id&#39;, to: &#39;trails#show&#39;</code>
           </li>
         </div>
       
@@ -4511,7 +4588,7 @@
 
             
 
-            <code class="ruby">  get &#39;/trails/:id&#39;, to: &#39;trails#show&#39;</code>
+            <code class="ruby">  get &#39;/parks/:id/trails/new&#39;, to: &#39;park_trails#new&#39;</code>
           </li>
         </div>
       
@@ -4522,7 +4599,7 @@
 
             
 
-            <code class="ruby">  get &#39;/parks/:id/trails/new&#39;, to: &#39;park_trails#new&#39;</code>
+            <code class="ruby">  post &#39;/parks/:id/trails&#39;, to: &#39;park_trails#create&#39;</code>
           </li>
         </div>
       
@@ -4533,7 +4610,7 @@
 
             
 
-            <code class="ruby">  post &#39;/parks/:id/trails&#39;, to: &#39;park_trails#create&#39;</code>
+            <code class="ruby">  get &#39;/trails/:id/edit&#39;, to: &#39;trails#edit&#39;</code>
           </li>
         </div>
       
@@ -4544,7 +4621,7 @@
 
             
 
-            <code class="ruby">  get &#39;/trails/:id/edit&#39;, to: &#39;trails#edit&#39;</code>
+            <code class="ruby">  patch &#39;/trails/:id&#39;, to: &#39;trails#update&#39;</code>
           </li>
         </div>
       
@@ -4555,12 +4632,23 @@
 
             
 
-            <code class="ruby">  patch &#39;/trails/:id&#39;, to: &#39;trails#update&#39;</code>
+            <code class="ruby">  delete &#39;/trails/:id&#39;, to: &#39;trails#destroy&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  delete &#39;/parks/:id&#39;, to: &#39;parks#destroy&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -6969,6 +7057,202 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="ab9e4020cc5dcd8274651cd66f958e903d18725a">
+  <div class="header">
+    <h3>spec/features/trails/delete_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>11</b> relevant lines.
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &#39;delete a trail&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &quot;user story 20: has a link to delete a trail&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    Park.destroy_all</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    Trail.destroy_all</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    park = Park.create!(name: &quot;Yosemite National Park&quot;, cost: true, daily_visitors: 39839)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    trail = park.trails.create!(name: &quot;Cook&#39;s Meadow Trail&quot;, difficulty: 1, open: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/trails/#{trail.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_link &quot;Delete #{trail.name}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(current_path).to eq (&#39;/trails&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to_not have_content(&quot;Cook&#39;s Meadow Trail&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 

@@ -1,4 +1,5 @@
 <%= link_to "Update #{@trail.name}", "/trails/#{@trail.id}/edit" %>
+<%= link_to "Delete #{@trail.name}", "/trails/#{@trail.id}", method: :delete %>
 <h1><%= @trail.name %></h1>
 <p>Difficulty: <%= @trail.difficulty %></p>
 <p>Open: <%= @trail.open %></p>
