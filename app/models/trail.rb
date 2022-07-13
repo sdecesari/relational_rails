@@ -4,3 +4,11 @@ class Trail < ApplicationRecord
   validates_presence_of :difficulty
   validates :open, inclusion: [true, false]
 end
+
+  def self.open
+    where(open: true).to_a
+  end
+
+  def self.sort
+    order(:name)
+  end

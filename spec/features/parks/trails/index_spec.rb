@@ -31,20 +31,24 @@ RSpec.describe 'parks trails index' do
   end
 
   it "user story 8: can take you back to trail index" do
-    park = Park.create!(name: "Yosemite National Park", cost: true, daily_visitors: 39839)
+    park = Park.create!(name: "Yosimite National Park", cost: true, daily_visitors: 39839)
 
     visit "/parks/#{park.id}/trails"
+    expect(page).to have_link("Trails")
     click_link 'Trails'
-
-    expect(page).to have_link("Trails", :href=>"/trails")
+    expect(current_path).to eq('/trails')
   end
 
   it "user story 9: can take you back to park index" do
-    park = Park.create!(name: "Yosemite National Park", cost: true, daily_visitors: 39839)
+    park = Park.create!(name: "Yosimite National Park", cost: true, daily_visitors: 39839)
+
 
     visit "/parks/#{park.id}/trails"
+    expect(page).to have_link("Parks")
     click_link 'Parks'
-
-    expect(page).to have_link("Parks", :href=>"/parks")
+    expect(current_path).to eq('/parks')
   end
+
+
+  
 end
