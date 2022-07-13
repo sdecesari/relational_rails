@@ -24,13 +24,5 @@ RSpec.describe 'index page view' do
     expect(current_path).to eq('/parks')
   end
 
-  xit "user story 16: has a link to sory trail alphabetically" do
-    park = Park.create!(name: "Yosemite National Park", cost: true, daily_visitors: 39839)
 
-    visit "/parks/#{park.id}/trails"
-
-    # expect(page).to have_link("Sort By Alphabetical Order")
-    click_link "Sort by Name"
-    expect(current_path).to eq("/parks/#{park.id}/trails/sort")
-  end
 end
