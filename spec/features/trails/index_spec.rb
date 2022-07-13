@@ -22,10 +22,6 @@ RSpec.describe 'index page view' do
     expect(page).to have_link("Parks")
     click_link 'Parks'
     expect(current_path).to eq('/parks')
-  end
-
-  it "user story 15: trail only shows true records" do 
-    
   end 
 
   it "user story 18: has a link to edit each trail" do

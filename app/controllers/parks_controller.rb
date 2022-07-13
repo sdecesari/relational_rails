@@ -28,7 +28,7 @@ class ParksController < ApplicationController
   def destroy
     park = Park.find(params[:id])
     park.trails
-    park.destroy
+    park.delete
     redirect_to '/parks'
   end
 

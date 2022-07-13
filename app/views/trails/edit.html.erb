@@ -1,9 +1,9 @@
 <%= form_with url: "/trails/#{@trail.id}", method: :patch, local: true do |form| %>
-  <%= form.label :name %>
-  <%= form.text_field :name %>
-  <%= form.label :difficulty %>
-  <%= form.text_field :difficulty %>
-  <%= form.label :open %>
-  <%= form.text_field :open, value: @trail.open %>
+  <p><%= form.label :name %>
+  <%= form.text_field :name %></p>
+  <p><%= form.label :difficulty %>
+  <%= form.text_field :difficulty %></p>
+  <p><%= form.label :open %>
+  <%= form.text_field :open %></p>
   <%= form.submit "Update Trail" %>
 <% end %>

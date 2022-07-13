@@ -27,6 +27,6 @@ RSpec.describe Park, type: :model do
      trail_2 = park_1.trails.create!(name: "The Mist Trail", difficulty: 2, open: true)
      trail_3 = park_1.trails.create!(name: "North dome Trail", difficulty: 3, open: true)
 
-     expect(park_1.trails.count).to eq(3)
+     expect(park_1.trails.all.count).to eq(3)
    end
 end
