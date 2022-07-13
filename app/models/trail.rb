@@ -6,9 +6,9 @@ class Trail < ApplicationRecord
 end
 
   def self.open
-    where(open: true).to_a
+    where(open: true)
   end
 
-  def self.sort
-    order(:name)
+  def self.alphabetical_order
+    order(name: :asc)
   end

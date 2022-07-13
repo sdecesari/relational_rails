@@ -36,4 +36,11 @@ RSpec.describe 'index page view', type: :feature do
 
     expect(current_path).to eq("/parks/new")
   end
+
+  it "user story 17: has a link to edit each park" do
+    park = Park.create!(name: "Yosemite National Park", cost: true, daily_visitors: 39839)
+    visit '/parks'
+    click_link "Update #{park.name}"
+    expect(current_path).to eq("/parks/#{park.id}/edit")
+  end
 end

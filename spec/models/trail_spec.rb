@@ -13,7 +13,7 @@ RSpec.describe Trail, type: :model do
   end
 
   describe "true records" do
-    it "user story: 15only shows open trails" do
+    it "user story 15: only shows open trails" do
       Park.destroy_all
       park = Park.create!(name: "Yosemite National Park", cost: true, daily_visitors: 39839)
       trail_1 = park.trails.create!(name: "Cook's Meadow Trail", difficulty: 1, open: true)
@@ -25,15 +25,15 @@ RSpec.describe Trail, type: :model do
   end
 
   xdescribe "alphabetical order" do
+    Park.destroy_all
+    Trail.destroy_all
     it "user story 16: sorts trails alphabetically" do
       park = Park.create!(name: "Yosemite National Park", cost: true, daily_visitors: 39839)
-      trail_1 = park.trails.create!(name: "Cook's Meadow Trail", difficulty: 1, open: true)
-      trail_2 = park.trails.create!(name: "The Mist Trail", difficulty: 2, open: false)
-      trail_3 = park.trails.create!(name: "North dome Trail", difficulty: 3, open: true)
+      park_1 = park.trails.create!(name: "Cook's Meadow Trail", difficulty: 1, open: true)
+      park_3 = park.trails.create!(name: "The Mist Trail", difficulty: 2, open: false)
+      park_2 = park.trails.create!(name: "North dome Trail", difficulty: 3, open: true)
 
-      trail = Trail.alphabetical_order
-
-      expect(trail.alphabetical_order).to eq([trail_1, trail_3, trail_2])
+      expect(Trail.alphabetical_order).to eq([park_1, park_2, park_3])
     end
   end
 end
