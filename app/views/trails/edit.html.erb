@@ -4,6 +4,6 @@
   <%= form.label :difficulty %>
   <%= form.text_field :difficulty %>
   <%= form.label :open %>
-  <%= form.text_field :open %>
+  <%= form.text_field :open, value: @trail.open %>
   <%= form.submit "Update Trail" %>
 <% end %>

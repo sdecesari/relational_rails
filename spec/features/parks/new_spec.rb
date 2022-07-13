@@ -16,6 +16,5 @@ RSpec.describe 'the park creation', type: :feature do
     click_button 'Create Park'
 
     expect(current_path).to eq("/parks")
-    expect(page).to have_content("")
   end
 end

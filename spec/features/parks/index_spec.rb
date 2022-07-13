@@ -16,18 +16,18 @@ RSpec.describe 'index page view', type: :feature do
     expect(page).to have_content(park_2.daily_visitors)
   end
 
-  it "user story 9: scan take you back to park index" do
-    visit '/parks'
-    click_link "Parks"
-
-    expect(page).to have_link("Parks", :href=>"/parks")
-  end
-
   it "user story 8: can take you back to trail index" do
     visit '/parks'
-    click_link "Trails"
+    expect(page).to have_link("Trails")
+    click_link 'Trails'
+    expect(current_path).to eq('/trails')
+  end
 
-    expect(page).to have_link("Trails", :href=>"/trails")
+  it "user story 9: can take you back to park index" do
+    visit '/parks'
+    expect(page).to have_link("Parks")
+    click_link 'Parks'
+    expect(current_path).to eq('/parks')
   end
 
   it "user story 11: links to the new page from the park index" do
