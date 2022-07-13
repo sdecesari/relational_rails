@@ -4,6 +4,9 @@ class ParkTrailsController < ApplicationController
       @trails = @park.trails
       if params[:sort] == "alpha"
         @trails = @park.trails.alphabetical_order
+      elsif params[:difficulty]
+         hike = params[:difficulty].to_i
+         @trails = @park.trails.where("difficulty > ?", hike)
       else
         @trails = @park.trails
       end
