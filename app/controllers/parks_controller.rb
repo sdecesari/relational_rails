@@ -25,4 +25,11 @@ class ParksController < ApplicationController
     redirect_to "/parks/#{park.id}"
   end
 
+  def destroy
+    park = Park.find(params[:id])
+    park.trails
+    park.destroy
+    redirect_to '/parks'
+  end
+
 end

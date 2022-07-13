@@ -1,5 +1,6 @@
 <%= link_to 'Park Trails', "/parks/#{@park.id}/trails" %>
 <%= link_to "Update #{@park.name}", "/parks/#{@park.id}/edit" %>
+<%= link_to "Delete #{@park.name}", "/parks/#{@park.id}", method: :delete %>
 <h1><%= @park.name %></h1>
 <p>Numbe of Trails: <%= @park.trails.count %></p>
 <p>Cost: <%= @park.cost %></p>
