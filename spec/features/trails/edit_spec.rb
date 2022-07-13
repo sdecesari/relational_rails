@@ -16,6 +16,7 @@ RSpec.describe 'edit trails', type: :feature do
     trail = park.trails.create!(name: "Cook's Meadow Trail", difficulty: 1, open: true)
 
     visit "/trails/#{trail.id}/edit"
+    
     fill_in('name', with: "Cook's Meadow Trail")
     fill_in('difficulty', with: 1)
     fill_in('open', with: true)

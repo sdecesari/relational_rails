@@ -13,13 +13,13 @@ class TrailsController < ApplicationController
 
    def update
      trail = Trail.find(params[:id])
-     trail.update(name: [params[:id]], difficulty: params[:difficulty], open: params[:open])
+     trail.update(name: params[:name], difficulty: params[:difficulty], open: params[:open])
      redirect_to "/trails/#{trail.id}"
    end
 
   def destroy
     trail = Trail.find(params[:id])
-    trail.destroy
+    trail.delete
     redirect_to '/trails'
   end
 

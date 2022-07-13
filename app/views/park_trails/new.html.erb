@@ -1,9 +1,9 @@
 <%= form_with url: "/parks/#{@park.id}/trails", method: :post, local: true do |form| %>
-  <%= form.label :name %>
-  <%= form.text_field :name %>
-  <%= form.label :difficulty %>
-  <%= form.text_field :difficulty %>
-  <%= form.label :open %>
-  <%= form.text_field :open %>
+  <p><%= form.label :name %>
+  <%= form.text_field :name %></p>
+  <p><%= form.label :difficulty %>
+  <%= form.text_field :difficulty %></p>
+  <p><%= form.label :open %>
+  <%= form.text_field :open %></p>
   <%= form.submit "Create Trail" %>
 <% end %>
