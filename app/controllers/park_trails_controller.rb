@@ -10,12 +10,17 @@ class ParkTrailsController < ApplicationController
    end
 
    def new
-     @id = params[:id]
+    @park = Park.find(params[:park_id])
    end
 
    def create
-      Trail.create(name: params[:name], difficulty: params[:difficulty], open: params[:true])
-      redirect_to "parks/#{params[:id]}/trails"
+      @park = Park.find(params[:park_id])
+      @park.trails.create(trail_params)
+      redirect_to "/parks/#{@park.id}/trails"
    end
 
+   private
+   def trail_params
+    params.permit(:name, :difficulty, :open)    
+   end
 end
